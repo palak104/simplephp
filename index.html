@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- I palak depani ,student no - 000787449 , cerify that all code submitted
+     is my own work;that i have not copied from any other source .
+I also certify that i have not allowed my work to be copied by other.
+
+Assignment 1 - I am creating a web page where user submit form with name
+choice of number of card he/she want to display and series of card and on
+submition of form it will display php page according to their input. -->
+
+<style>
+body {
+    background-color: lemonchiffon;
+    color:crimson;
+    padding : 2%;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 35px;
+    
+
+
+}
+#textbox{
+    height: 35px;
+    font-size: 25px;
+
+
+}
+legend{
+    color:indigo;
+}
+.radiobutton{
+    color:steelblue;
+   
+    
+}
+input[type="radio"]{
+    height: 25px;
+    width: 20px;
+}
+
+button{
+    margin: 5px;
+}
+
+
+</style>
+<head>
+    <title> Test your luck</title>
+    <meta chartset = "UTF-8">
+    <meta name= "viewport" content="user-choices">
+</head>
+<body>
+    <!-- this is form and on submition it will redirected to game.php
+      and display page according to user input -->
+   
+    <form action = "game.php" method = "get">
+        <fieldset> 
+            <legend> Please fill this form</legend>
+
+        Name : <br>
+        <input type = "text" id= "textbox" name="name" required><br>
+
+        How many cards do you want to display? : <br>
+        <input type = "number" id="textbox" name= "card-num"  max="13" required><br>
+        
+        Which series of cards you want to display? <br>
+        <div class= "radiobutton"  >
+        <input type = "radio" name ="cardseries" value="Spades">Spades
+        <input type = "radio" name ="cardseries" value="Diamonds">diamonds
+        <input type = "radio" name ="cardseries" value="Hearts">Hearts
+        <input type = "radio" name ="cardseries" value="Clubs">Clubs <br>
+        <input type = "radio" name ="cardseries" value="Deck"> Changed mind?
+        want to see all Deck cards.<br>
+           
+    </div>
+        <!-- two button , submit and reset-->
+        <button type = "submit" id="textbox"  value = "Submit"> Submit  </button>
+        <button type = "reset" id="textbox" value = "Reset"> Reset </button>
+
+    </fieldset>
+    </form>
+
+
+</body>
+
+</html>
